@@ -1,8 +1,39 @@
+
+
+// DOM 
+// creo variabile container
+container = document.getElementById("container");
+
+// creo un input nel documento 
+// questo serve solo a definirlo?
+inputEmail = document.createElement("input");
+// inserisco l input nel container
+container.append(inputEmail);
+
+
+// questo serve solo a definirlo?
+buttonEmail = document.createElement("button");
+// inserisco l input nel container
+container.append(buttonEmail);
+
+// salva input quando clicchi il bottone
+buttonEmail.addEventlListener("click",
+    function () {
+
+        userEmail = document.querySelector("input").value;
+        console.log(userEmail);
+    }
+
+    )
+
+
+
 // EMAIL
 
+
 // chiedere all utente la sua mail
-let userEmail = prompt(",inserisci la tua mail");
-console.log(userEmail)
+// let userEmail = prompt(",inserisci la tua mail");
+// console.log(userEmail)
 // inventati una lista di chi può accedere
 const whoCanAccess = ["simone@gmail.com", "massimo@gmail.com", "tony@gmail.com"];
 console.log(whoCanAccess);
