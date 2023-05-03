@@ -8,14 +8,15 @@ const whoCanAccess = ["simone@gmail.com", "massimo@gmail.com", "tony@gmail.com"]
 console.log(whoCanAccess);
 // controlla che sia nella lista di chi può accedere
 for (i=0 ; i<whoCanAccess.length ; i++) {
-    
+
     if (userEmail == whoCanAccess[i]) {
         accessText = "Accesso effettuato"
     } else {
         accessText = "Accesso negato"
     }
-    console.log(accessText)
+    
 };
+console.log(accessText)
 // stampa messaggio esito controllo
 
 
